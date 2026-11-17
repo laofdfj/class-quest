@@ -60,6 +60,75 @@ body{background:radial-gradient(ellipse at 88% 0%,#e9d9ff 0,transparent 31%),rad
 .modal{border:1px solid #f0e4f6;box-shadow:0 20px 60px #49365f25}
 @media(max-width:850px){.layout{grid-template-columns:1fr}.side{box-shadow:none}.main{padding:20px}.brand-logo{width:78px;height:42px}.logo{min-height:54px}.hero{min-height:205px;padding:23px}}
 @media(max-width:560px){.main{padding:13px}.hero{padding:18px;min-height:170px}.hero h2{font-size:23px}.hero-cat{width:112px;height:125px}.hero p{font-size:12px}.stats{gap:9px}.stat{padding:14px;min-height:95px}.stat strong{font-size:23px}}
+
+/* CLASS QUEST — extended Figma polish */
+.page{animation:pageIn .28s ease both}
+@keyframes pageIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+.page>.toolbar:first-child{padding:13px 15px;background:#ffffffa8;border:1px solid #fff;border-radius:18px;box-shadow:0 7px 22px #8c68a510;margin-bottom:17px}
+.toolbar{gap:11px;align-items:center}
+.field{background:#fff;border:1px solid #e9dcef;color:#59446d;min-height:43px;box-shadow:0 2px 5px #75539b08}
+.field:focus{outline:3px solid #ead8ff;border-color:#bd91e4}
+.panel{overflow:hidden}
+.panel>.head{padding-bottom:13px;margin-bottom:15px;border-bottom:1px solid #f1e8f7}
+.panel h3{font-size:17px}
+.muted{color:#9583a8}
+.table{border-collapse:separate;border-spacing:0 7px;min-width:650px}
+.table thead th{font-size:10px;letter-spacing:1px;color:#a18eaf;padding:10px 13px}
+.table tbody tr{background:#fcf9ff}
+.table tbody td{padding:13px;border-top:1px solid #f1e8f7;border-bottom:1px solid #f1e8f7}
+.table tbody td:first-child{border-left:1px solid #f1e8f7;border-radius:12px 0 0 12px}
+.table tbody td:last-child{border-right:1px solid #f1e8f7;border-radius:0 12px 12px 0}
+.point-summary{gap:12px;margin:17px 0 20px}
+.point-summary>div{background:linear-gradient(145deg,#fff,#f7f0ff);border:1px solid #eee2f8;border-radius:17px;padding:17px;box-shadow:0 5px 16px #8060a010}
+.point-summary b{font-size:22px;color:#76519a}
+.point-summary small{display:block;color:#9986aa;margin-top:5px}
+.actions{gap:12px}
+.action{padding:15px;border:1px solid #eadcf5;border-radius:17px;background:linear-gradient(145deg,#fff,#fcf7ff);box-shadow:0 5px 15px #8c68a50c;transition:.18s}
+.action:hover,.product:hover{transform:translateY(-3px);box-shadow:0 12px 25px #8c68a51c;border-color:#d8b9f0}
+.products{gap:16px}
+.product{border:1px solid #eddef7;border-radius:20px;background:linear-gradient(160deg,#fff,#fcf7ff);padding:16px;box-shadow:0 7px 20px #8c68a50c;transition:.18s}
+.product-photo{border-radius:15px;background:linear-gradient(135deg,#f1e5ff,#e7f6ff);object-fit:contain}
+.product-actions{gap:8px}
+.product-actions .btn{flex:1}
+.rows{gap:9px}
+.row{border-radius:15px;transition:background .15s}
+.row:hover{background:#f7efff}
+.avatar{width:42px;height:42px;display:grid;place-items:center}
+.xp{background:#e8f8f0;border-radius:999px;padding:6px 10px;font-weight:900}
+.xp.negative{background:#fff0f1;color:#d16d7d}
+.badge{border-radius:999px;padding:7px 11px;font-size:11px}
+.teacher-box{border:1px solid #e7d7f4;background:linear-gradient(135deg,#fcf8ff,#f1f8ff);border-radius:18px;padding:18px;margin-top:16px}
+.teacher-note{border-radius:12px;background:#f7efff;padding:11px 13px;color:#806b98}
+.teacher-tools{gap:12px}
+.achievement-summary{gap:13px;margin:16px 0}
+.achievement-summary>.panel{flex:1;display:flex;flex-direction:column;gap:6px;background:linear-gradient(135deg,#fff,#f6edff);border-radius:17px}
+.achievement-summary b{font-size:21px;color:#79529e}
+.achievement-grid{gap:14px}
+.achievement-card{position:relative;display:flex;align-items:center;gap:15px;padding:16px;border:1px solid #ebdef5;border-radius:19px;background:linear-gradient(145deg,#fff,#fcf8ff);box-shadow:0 6px 18px #8c68a510;transition:.18s}
+.achievement-card:hover{transform:translateY(-2px);box-shadow:0 12px 25px #8c68a51c}
+.achievement-card img{width:82px;height:82px;object-fit:contain;flex:none;filter:drop-shadow(0 5px 5px #74528b20)}
+.achievement-card.locked{background:linear-gradient(145deg,#fbf9fd,#f5f1f8)}
+.achievement-card.locked img{filter:grayscale(.25) opacity(.72)}
+.achievement-info{min-width:0;flex:1}
+.achievement-info b{font-size:14px;color:#604477}
+.achievement-info p{font-size:12px;line-height:1.45;color:#9583a8;margin:5px 0}
+.achievement-info small{font-size:10px;color:#9a82ae}
+.achievement-progress{height:7px;border-radius:20px;background:#eee5f5;margin-top:8px;overflow:hidden}
+.achievement-progress i{display:block;height:100%;border-radius:20px;background:linear-gradient(90deg,#b77be9,#e9a9d2)}
+.achievement-state{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#e8f8f0;color:#50a88b;font-weight:900}
+.achievement-card.locked .achievement-state{background:#f0ebf4;color:#a797b1}
+.meme-settings{gap:10px}
+.meme-setting{padding:14px;border:1px solid #eee3f6;border-radius:15px;background:#fdfaff}
+.meme-setting small{color:#9b88ad}
+.sound-controls label{padding:12px 14px;border-radius:14px;background:#fcf8ff;border:1px solid #f0e7f7}
+.form label{gap:7px;color:#78628d;font-weight:800}
+.modalback{backdrop-filter:blur(8px);background:#34234466}
+.modal{border-radius:23px;padding:25px}
+.toast{border-radius:14px;box-shadow:0 10px 30px #51356c35}
+.projector{background:radial-gradient(circle at 80% 10%,#7952a5,#30213f 65%);color:white}
+.projector h1{letter-spacing:1px}
+@media(max-width:900px){.achievement-grid{grid-template-columns:1fr 1fr}.point-summary{grid-template-columns:1fr 1fr}.point-summary>div:last-child{grid-column:1/-1}}
+@media(max-width:600px){.page>.toolbar:first-child{align-items:stretch}.page>.toolbar:first-child .field,.page>.toolbar:first-child .btn{width:100%}.achievement-grid{grid-template-columns:1fr}.achievement-card img{width:68px;height:68px}.point-summary{grid-template-columns:1fr}.point-summary>div:last-child{grid-column:auto}.table{min-width:600px}.panel{padding:16px}}
 </style></head><body>
 <div id="memePop" class="meme-pop" hidden><div class="meme-fallback" id="memeFallback">🐱</div><img id="memeImage" alt="Кот-мем"><div><b id="memeTitle">Кото-новость</b><span id="memeText"></span></div></div>
 <div class="layout"><aside class="side"><div class="logo"><img class="side-cat brand-logo" src="assets/LOGO.svg" alt="CLASS QUEST"><div><b>CLASS QUEST</b><small>ACADEMY CAT CLUB</small></div></div><nav class="nav" id="nav"><button class="active" data-page="home">🏠 Главная</button><button data-page="classes">👥 Классы и ученики</button><button data-page="points">✨ Начислить XP</button><button data-page="shop">🎁 Магазин</button><button data-page="leaders">🏆 Рейтинг</button><button data-page="achievements">🏅 Достижения</button><button data-page="memes">😂 Мем-центр</button><button data-page="settings">⚙️ Настройки</button></nav><div class="side-note">🐾 Котик всё записывает. Даже когда делает вид, что спит.</div></aside>
@@ -153,7 +222,7 @@ function renderTeacher(){
   persist();
   msg(delta===0?'Баланс не изменился':'Баланс обновлён: '+(delta>0?'+':'')+delta+' XP');
  });
-}function bulkTeacherAward(){let n=Number(document.getElementById('bulkAmount').value),mode=document.getElementById('bulkTarget').value,cls=document.getElementById('pointclass').value,arr=d.students.filter(s=>mode==='all'||s.classId===cls);if(!Number.isSafeInteger(n)||n<=0)return msg('Укажи положительное целое число XP');if(!arr.length)return msg('Нет учеников для начисления');if(!confirm('Начислить по '+n+' XP ученикам: '+arr.length+'? Дневной лимит будет отключён для этой операции.'))return;arr.forEach(s=>log(s,n,'Восстановление XP · режим учителя'));persist();msg('Начислено '+n+' XP для '+arr.length+' учеников');renderTeacher();catMeme()};function catSticker(index){const palettes=[['#ffd4e8','#a85f8c','#fff1a8'],['#d8e9ff','#6283b5','#fff0b8'],['#e6d9ff','#8061ae','#ffe0ee'],['#d8f2df','#559c79','#fff0b8'],['#ffe5c9','#b97948','#f8d8e8'],['#d8f3f0','#4f9991','#fff0b8'],['#f8d7d7','#ae626d','#fff1a8'],['#fff0b8','#a88642','#e4d9ff']];const p=palettes[index%palettes.length],props=['☕','⭐','👑','💖','🎮','🐟','💸','🏆'];const eye=index%3===0?'<path d="M42 49q5 6 10 0M70 49q5 6 10 0" stroke="#49394c" stroke-width="3" fill="none" stroke-linecap="round"/>':'<circle cx="49" cy="49" r="3.5" fill="#49394c"/><circle cx="73" cy="49" r="3.5" fill="#49394c"/>';const svg='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M60 5C28 5 7 27 7 59c0 32 21 54 53 54s53-22 53-54C113 27 92 5 60 5Z" fill="'+p[0]+'" stroke="white" stroke-width="7"/><path d="M27 40 25 14 48 29M73 29 96 14 93 42" fill="'+p[1]+'" stroke="white" stroke-width="5" stroke-linejoin="round"/><path d="M25 61c0-22 15-37 35-37s35 15 35 37-15 39-35 39S25 83 25 61Z" fill="#fff9f4" stroke="'+p[1]+'" stroke-width="3"/>'+eye+'<path d="m56 60 4 4 4-4" fill="#ef91a9" stroke="#ba7188" stroke-width="1.5"/><path d="M60 64q-7 8-13 2m13-2q7 8 13 2" stroke="#76536b" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M36 62 17 58m20 11-18 4m65-11 19-4m-20 15 18 4" stroke="#987d91" stroke-width="1.8" stroke-linecap="round"/><circle cx="92" cy="88" r="19" fill="'+p[2]+'" stroke="white" stroke-width="4"/><text x="92" y="96" text-anchor="middle" font-size="23">'+props[index%props.length]+'</text><path d="M17 92q-8 3-7 12m90-91q9-1 11 8" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/></svg>';return 'data:image/svg+xml;charset=UTF-8,'+encodeURIComponent(svg)}
+}function bulkTeacherAward(){let n=Number(document.getElementById('bulkAmount').value),mode=document.getElementById('bulkTarget').value,cls=document.getElementById('pointclass').value,arr=d.students.filter(s=>mode==='all'||s.classId===cls);if(!Number.isSafeInteger(n)||n<=0)return msg('Укажи положительное целое число XP');if(!arr.length)return msg('Нет учеников для начисления');if(!confirm('Начислить по '+n+' XP ученикам: '+arr.length+'? Дневной лимит будет отключён для этой операции.'))return;arr.forEach(s=>log(s,n,'Восстановление XP · режим учителя'));persist();msg('Начислено '+n+' XP для '+arr.length+' учеников');renderTeacher();catMeme()};function catSticker(index){const stickers=['assets/joy.svg','assets/pride.svg','assets/delight.svg','assets/celebration.svg','assets/surprise.svg','assets/thinking.svg','assets/sleepy.svg','assets/sad.svg'];return stickers[((Number(index)||0)%stickers.length+stickers.length)%stickers.length]}
 function achievementList(s){const logs=d.ledger.filter(l=>l.studentId===s.id),positive=logs.filter(l=>l.points>0),help=positive.filter(l=>/помог|помощ/i.test(l.reason||'')).length,issued=d.orders.filter(o=>o.studentId===s.id&&o.status==='issued').length,spent=d.orders.filter(o=>o.studentId===s.id&&o.status!=='cancelled').reduce((n,o)=>n+(o.price||0),0),days=new Set(positive.map(l=>new Date(l.date).toDateString())).size;return[
 {title:'Первый мяу',desc:'Получить первые XP. Большое дело начинается с маленького «мяу».',progress:Math.min(positive.length,1),goal:1,sticker:0},
 {title:'Карманный котик',desc:'Накопить 100 XP. Уже можно не просить рыбку в долг.',progress:earnedXP(s),goal:100,sticker:1},
