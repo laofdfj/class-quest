@@ -158,6 +158,43 @@ body{background:radial-gradient(ellipse at 88% 0%,#e9d9ff 0,transparent 31%),rad
 .meme-pop.tucked .meme-tuck{left:-7px;width:34px;border-radius:14px 0 0 14px}
 @media(max-width:850px){.logo{min-height:58px;padding:0 0 8px;justify-content:flex-start}.brand-logo{width:130px;height:54px}.hero{min-height:220px;padding:22px}.hero-cat-orbit{width:170px;height:170px;flex-basis:170px}.hero-cat{width:150px;height:150px}}
 @media(max-width:560px){.hero{gap:8px;min-height:185px;padding:17px}.hero-cat-orbit{width:112px;height:112px;flex-basis:112px;box-shadow:inset 0 0 0 5px #ffffff85,0 7px 15px #9672bb20}.hero-cat{width:100px;height:100px}.hero h2{font-size:22px}.hero p{font-size:12px;line-height:1.4}.hero-actions{gap:7px}.hero-actions .btn{padding:9px 12px;font-size:11px}.little-tip{padding:12px 14px;gap:10px}.little-tip .tip-icon{width:34px;height:34px}.little-tip p{font-size:12px}.meme-hero{padding:13px 15px}.meme-hero h2{font-size:18px}.meme-hero>span{font-size:30px}}
+
+/* CLASS QUEST — grand class hall */
+#classes{position:relative;isolation:isolate;padding:4px 2px 12px}
+#classes:before{content:"";position:absolute;z-index:-1;inset:0 -12px 8px;border-radius:32px;background:radial-gradient(ellipse at 8% 2%,#f8dff0 0,transparent 35%),radial-gradient(ellipse at 95% 90%,#dff2ff 0,transparent 38%);opacity:.8;pointer-events:none}
+#classes .page-intro{position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;margin:0 0 18px;padding:22px 25px;border:1px solid #fff;border-radius:25px;background:linear-gradient(112deg,#f2e5ff 0%,#fff7fc 48%,#e5f6ff 100%);box-shadow:0 12px 30px #8060a51a}
+#classes .page-intro:before{content:"✦  ✧  ✦";position:absolute;right:24px;top:13px;color:#c49be5;font-size:20px;letter-spacing:9px;opacity:.8}
+#classes .page-intro:after{content:"CLASS • GUILD";position:absolute;right:22px;bottom:13px;color:#ad8bc7;font-size:9px;font-weight:900;letter-spacing:2px}
+#classes .page-intro>img{width:88px;height:88px;object-fit:contain;padding:7px;border-radius:24px;background:linear-gradient(145deg,#fff,#f5eaff);border:1px solid #fff;box-shadow:0 7px 18px #8563a51c;filter:drop-shadow(0 3px 3px #8967a322)}
+#classes .page-intro>div{min-width:0;flex:1}
+#classes .page-intro h2{margin:5px 0 4px;color:#56366f;font-size:clamp(23px,3vw,31px);letter-spacing:-.7px}
+#classes .page-intro p{margin:0;color:#806d96;font-size:13px;line-height:1.5}
+#classes .page-intro .btn{position:relative;z-index:1;white-space:nowrap}
+#classes>.toolbar{padding:14px 16px;margin:0 0 17px;border:1px solid #fff;border-radius:19px;background:linear-gradient(100deg,#ffffffed,#f8f1ffed);box-shadow:0 7px 22px #8060a510}
+#classes>.toolbar:before{content:"🏰";font-size:23px;margin-right:2px;filter:drop-shadow(0 2px 2px #8a67a522)}
+#classes>.toolbar .field{min-width:190px;background:#fff;border-color:#dfcbed;color:#604477;font-weight:800}
+#classes>.toolbar .btn{border-radius:999px;padding:11px 17px}
+#classes>.panel{position:relative;overflow:hidden;padding:22px 23px 25px;border:2px solid #eadcf7;border-radius:25px;background:linear-gradient(145deg,#fff 0%,#fffbff 68%,#f3f9ff 100%);box-shadow:0 14px 35px #76549b1c,inset 0 0 0 5px #faf5ff,inset 0 0 0 7px #fff}
+#classes>.panel:before,#classes>.panel:after{content:"✧";position:absolute;pointer-events:none;color:#d6b1ed;font-size:24px}
+#classes>.panel:before{top:10px;left:14px}
+#classes>.panel:after{right:15px;bottom:8px;color:#edc1d9}
+#classes>.panel .head{position:relative;padding:3px 5px 15px 8px;margin-bottom:14px;border-bottom:1px solid #eee3f6}
+#classes>.panel .head h3{display:flex;align-items:center;gap:10px;color:#5a3c76;font-size:21px}
+#classes>.panel .head h3:before{content:"♛";display:grid;place-items:center;width:37px;height:37px;border-radius:13px;background:linear-gradient(145deg,#f2e4ff,#ffeaf5);color:#a46bc7;font-size:22px;box-shadow:0 3px 9px #8760a51a}
+#classes>.panel .head .muted{padding:7px 12px;border-radius:999px;background:#f3eaff;color:#8c68ad;font-weight:900}
+#classes .table{border-spacing:0 9px;min-width:650px}
+#classes .table thead th{padding:10px 14px;color:#9a7db1;font-size:10px;letter-spacing:1.4px}
+#classes .table tbody tr{background:linear-gradient(100deg,#fff 0%,#fcf8ff 72%,#f4faff 100%);filter:drop-shadow(0 3px 5px #76549b0b);transition:transform .16s,filter .16s}
+#classes .table tbody tr:hover{transform:translateY(-2px);filter:drop-shadow(0 7px 9px #76549b1b)}
+#classes .table tbody td{padding:14px 13px;border-top:1px solid #eee3f6;border-bottom:1px solid #eee3f6;color:#604b72;font-weight:800}
+#classes .table tbody td:first-child{border-left:1px solid #eee3f6;border-radius:15px 0 0 15px;color:#5b3c77}
+#classes .table tbody td:last-child{border-right:1px solid #eee3f6;border-radius:0 15px 15px 0}
+#classes .table tbody td:first-child{font-size:14px}
+#classes .table .badge{background:linear-gradient(100deg,#f0e5ff,#fceafa);color:#895bb0;border:1px solid #ead8f7}
+#classes .table .btn.alt{border-radius:999px;padding:7px 12px;background:#fff3f6;color:#b66a8d;border-color:#f5dce8}
+@media(max-width:760px){#classes .page-intro{padding:18px;gap:12px}#classes .page-intro>img{width:68px;height:68px}#classes .page-intro:before,#classes .page-intro:after{display:none}}
+@media(max-width:560px){#classes>.toolbar:before{display:none}#classes>.toolbar .field{width:100%;min-width:0}#classes>.panel{padding:17px 12px 20px;border-radius:20px}#classes>.panel .head h3{font-size:17px}#classes>.panel .head .muted{font-size:10px;padding:6px 8px}#classes .page-intro{align-items:flex-start}#classes .page-intro .btn{font-size:11px;padding:9px 10px}}
+
 </style></head><body>
 <div id="memePop" class="meme-pop" hidden><button class="meme-tuck" id="memeTuck" type="button" aria-label="Свернуть мем-плашку" title="Свернуть мем-плашку">›</button><div class="meme-fallback" id="memeFallback">🐱</div><img id="memeImage" alt="Кот-мем"><div><b id="memeTitle">Кото-новость</b><span id="memeText"></span></div></div>
 <div class="layout"><aside class="side"><div class="logo"><img class="side-cat brand-logo" src="assets/LOGO.svg" alt="CLASS QUEST"></div><nav class="nav" id="nav"><button class="active" data-page="home">🏠 Главная</button><button data-page="classes">👥 Классы и ученики</button><button data-page="points">✨ Начислить XP</button><button data-page="shop">🎁 Магазин</button><button data-page="leaders">🏆 Рейтинг</button><button data-page="achievements">🏅 Достижения</button><button data-page="memes">😂 Мем-центр</button><button data-page="settings">⚙️ Настройки</button></nav><div class="side-note">🐾 Котик всё записывает. Даже когда делает вид, что спит.</div></aside>
