@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" role="img" aria-labelledby="title desc">
+<title id="title">Котик-маскот CLASS QUEST</title><desc id="desc">Белый пушистый котик с лавандовыми отметинами, золотой короной и фиолетовым плащом машет лапкой.</desc>
+<defs>
+ <linearGradient id="fur" x2="0" y2="1"><stop stop-color="#fffdfb"/><stop offset="1" stop-color="#e9ddf5"/></linearGradient>
+ <linearGradient id="cape" x2="1" y2="1"><stop stop-color="#b77ce5"/><stop offset="1" stop-color="#7041a8"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#fff19b"/><stop offset="1" stop-color="#efa92d"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dy="8"/><feComponentTransfer><feFuncA type="linear" slope=".18"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<ellipse cx="210" cy="385" rx="130" ry="17" fill="#bda0dc" opacity=".22"/>
+<g filter="url(#shadow)" stroke="#493052" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <!-- tail -->
+ <path d="M294 333c82 17 98-54 61-78-25-16-48 7-34 26 8 11 23 6 24-4" fill="none" stroke="#493052" stroke-width="31"/>
+ <path d="M294 333c82 17 98-54 61-78-25-16-48 7-34 26 8 11 23 6 24-4" fill="none" stroke="#d8c3ed" stroke-width="19"/>
+ <!-- cape -->
+ <path d="M115 253c-43 24-63 88-53 119 40 4 88-8 115-38l103 37c47-17 78-55 75-106l-65-33z" fill="url(#cape)"/>
+ <path d="M92 350c37-1 66-15 87-38m93 44c33-13 55-34 67-62" fill="none" stroke="#d6aaff" stroke-width="5"/>
+ <!-- body -->
+ <path d="M112 271c-12 44 2 102 44 116 40 13 93 13 133-2 38-15 47-67 25-113-22-45-64-60-111-58-47 2-79 18-91 57z" fill="url(#fur)"/>
+ <path d="M164 303c-10 23-9 57 8 73m96-75c14 25 14 52 2 72" fill="none" stroke="#c9b5df" stroke-width="7"/>
+ <!-- head -->
+ <path d="M83 151 91 57q3-24 23-9l65 52q31-11 65 0l65-53q21-15 24 10l8 96c26 80-28 148-128 151C112 307 56 239 83 151z" fill="url(#fur)"/>
+ <!-- ears -->
+ <path d="m103 109 5-40 44 38m121 0 45-39 5 42" fill="#f7a9c8" stroke="none"/>
+ <!-- forehead markings -->
+ <path d="M166 108c-18 12-23 31-19 48m104-48c18 12 23 31 19 48" fill="none" stroke="#b9a0d2" stroke-width="14"/>
+ <path d="M202 94c-7 14-8 27-4 39" fill="none" stroke="#b9a0d2" stroke-width="9"/>
+ <!-- cheeks -->
+ <ellipse cx="126" cy="213" rx="25" ry="14" fill="#ffb6c9" stroke="none" opacity=".8"/>
+ <ellipse cx="294" cy="213" rx="25" ry="14" fill="#ffb6c9" stroke="none" opacity=".8"/>
+ <!-- eyes -->
+ <ellipse cx="157" cy="185" rx="24" ry="31" fill="#56336f" stroke="none"/>
+ <ellipse cx="263" cy="185" rx="24" ry="31" fill="#56336f" stroke="none"/>
+ <ellipse cx="163" cy="177" rx="8" ry="11" fill="#fff" stroke="none"/>
+ <ellipse cx="269" cy="177" rx="8" ry="11" fill="#fff" stroke="none"/>
+ <path d="M134 150q22-16 43-1m63 0q22-15 43 1" fill="none" stroke-width="7"/>
+ <!-- muzzle -->
+ <path d="M194 211q16-13 32 0-8 14-16 14t-16-14z" fill="#ed8cae" stroke="none"/>
+ <path d="M210 225q-1 18-17 18m17-18q1 18 17 18" fill="none" stroke-width="5"/>
+ <path d="M195 247q15 13 30 0" fill="none" stroke="#d66f91" stroke-width="5"/>
+ <!-- raised paw -->
+ <path d="M302 269c-3-35 5-66 24-76 18-9 37 6 36 27l-5 56c-2 18-15 28-32 25-14-3-22-15-23-32z" fill="url(#fur)"/>
+ <path d="M333 256c-10-1-17 6-17 15 0 9 8 15 17 15s18-6 18-15c0-9-8-15-18-15z" fill="#f59fba" stroke="none"/>
+ <circle cx="316" cy="246" r="6" fill="#f59fba" stroke="none"/><circle cx="331" cy="238" r="6" fill="#f59fba" stroke="none"/><circle cx="347" cy="246" r="6" fill="#f59fba" stroke="none"/>
+ <!-- medal -->
+ <path d="m188 282-9 28 28-11 28 11-9-28" fill="#f3c4e5" stroke-width="5"/>
+ <circle cx="207" cy="280" r="21" fill="url(#gold)"/><path d="m207 265 5 10 11 2-8 8 2 11-10-5-10 5 2-11-8-8 11-2z" fill="#fff4a5" stroke="none"/>
+ <!-- crown -->
+ <path d="m144 87 9-49 36 27 22-42 22 42 36-27 9 49q-67 19-134 0z" fill="url(#gold)"/>
+ <path d="M145 88q65 18 133 0l-4 18q-62 17-125 0z" fill="#e99c2b"/>
+ <circle cx="153" cy="38" r="7" fill="#fff1a1" stroke="none"/><circle cx="211" cy="23" r="7" fill="#fff1a1" stroke="none"/><circle cx="269" cy="38" r="7" fill="#fff1a1" stroke="none"/>
+</g>
+<g fill="#f4bf48"><path d="m44 145 8 18 18 8-18 8-8 18-8-18-18-8 18-8z"/><path d="m365 111 6 13 13 6-13 6-6 13-6-13-13-6 13-6z"/></g>
+<g fill="#b98be5"><path d="m64 246 5 10 10 5-10 5-5 10-5-10-10-5 10-5z"/><path d="m353 326 5 10 10 5-10 5-5 10-5-10-10-5 10-5z"/></g>
+</svg>
