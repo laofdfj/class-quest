@@ -195,6 +195,92 @@ body{background:radial-gradient(ellipse at 88% 0%,#e9d9ff 0,transparent 31%),rad
 @media(max-width:760px){#classes .page-intro{padding:18px;gap:12px}#classes .page-intro>img{width:68px;height:68px}#classes .page-intro:before,#classes .page-intro:after{display:none}}
 @media(max-width:560px){#classes>.toolbar:before{display:none}#classes>.toolbar .field{width:100%;min-width:0}#classes>.panel{padding:17px 12px 20px;border-radius:20px}#classes>.panel .head h3{font-size:17px}#classes>.panel .head .muted{font-size:10px;padding:6px 8px}#classes .page-intro{align-items:flex-start}#classes .page-intro .btn{font-size:11px;padding:9px 10px}}
 
+
+
+/* CLASS QUEST — extra royal finishing for the class screen */
+#classes{
+  padding:12px 14px 22px;
+  border:1px solid #eadcf7;
+  border-radius:34px;
+  background:linear-gradient(145deg,#fff9fdcc,#f8f3ff99 55%,#f1faffaa);
+  box-shadow:inset 0 0 0 5px #ffffff8c,0 14px 38px #79559b0d;
+}
+#classes:before{
+  inset:0;
+  border:1px solid #fff;
+  border-radius:33px;
+  background:
+    radial-gradient(circle at 7% 7%,#f5d8ed 0 2px,transparent 3px),
+    radial-gradient(circle at 93% 7%,#d9c5f5 0 2px,transparent 3px),
+    radial-gradient(circle at 7% 93%,#d9eafa 0 2px,transparent 3px),
+    radial-gradient(circle at 93% 93%,#f3d8e8 0 2px,transparent 3px),
+    radial-gradient(ellipse at 8% 2%,#f8dff0 0,transparent 35%),
+    radial-gradient(ellipse at 95% 90%,#dff2ff 0,transparent 38%);
+}
+#classes:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:7px;
+  border:1px dashed #d9c4eb;
+  border-radius:28px;
+  opacity:.72;
+  pointer-events:none;
+}
+#classes .page-intro{
+  border:1px solid #fff;
+  box-shadow:0 12px 28px #8060a51a,inset 0 0 0 1px #eadcf7;
+}
+#classes .page-intro>img{
+  outline:3px solid #ffffffa8;
+  outline-offset:3px;
+}
+#classes>.toolbar{
+  border:1px solid #e8d8f5;
+  box-shadow:0 8px 22px #8060a510,inset 0 1px 0 #fff;
+}
+#classes>.panel{
+  border-color:#d9c6eb;
+  box-shadow:0 15px 34px #76549b20,inset 0 0 0 5px #f7f0ff,inset 0 0 0 7px #fff,inset 0 0 0 8px #eadcf7;
+}
+#classes>.panel .head h3:before{
+  border:1px solid #e7d5f5;
+  box-shadow:0 4px 10px #8760a51a,inset 0 1px 0 #fff;
+}
+#classes .table thead th{
+  color:#9270ad;
+  text-shadow:0 1px 0 #fff;
+}
+#classes .table tbody tr{
+  filter:drop-shadow(0 4px 7px #76549b12);
+}
+#classes .table tbody td:first-child:before{
+  content:"✦";
+  display:inline-block;
+  margin-right:8px;
+  color:#c18cdd;
+  font-size:11px;
+  vertical-align:1px;
+}
+#classes .table tbody td:nth-child(3){
+  color:#579b91;
+  font-weight:900;
+}
+#classes .table tbody td:nth-child(4){
+  color:#8062a5;
+  font-weight:900;
+}
+@media(max-width:850px){
+  #classes{padding:9px 9px 16px;border-radius:27px}
+  #classes:after{inset:5px;border-radius:22px}
+}
+@media(max-width:560px){
+  #classes{padding:7px 6px 12px;border-radius:23px}
+  #classes:after{inset:4px;border-radius:18px}
+  #classes>.panel{box-shadow:0 10px 24px #76549b16,inset 0 0 0 3px #f7f0ff,inset 0 0 0 5px #fff}
+  #classes .table tbody td:first-child:before{margin-right:5px}
+}
+
 </style></head><body>
 <div id="memePop" class="meme-pop" hidden><button class="meme-tuck" id="memeTuck" type="button" aria-label="Свернуть мем-плашку" title="Свернуть мем-плашку">›</button><div class="meme-fallback" id="memeFallback">🐱</div><img id="memeImage" alt="Кот-мем"><div><b id="memeTitle">Кото-новость</b><span id="memeText"></span></div></div>
 <div class="layout"><aside class="side"><div class="logo"><img class="side-cat brand-logo" src="assets/LOGO.svg" alt="CLASS QUEST"></div><nav class="nav" id="nav"><button class="active" data-page="home">🏠 Главная</button><button data-page="classes">👥 Классы и ученики</button><button data-page="points">✨ Начислить XP</button><button data-page="shop">🎁 Магазин</button><button data-page="leaders">🏆 Рейтинг</button><button data-page="achievements">🏅 Достижения</button><button data-page="memes">😂 Мем-центр</button><button data-page="settings">⚙️ Настройки</button></nav><div class="side-note">🐾 Котик всё записывает. Даже когда делает вид, что спит.</div></aside>
