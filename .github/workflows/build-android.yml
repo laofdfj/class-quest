@@ -30,6 +30,9 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
+          accept-android-sdk-licenses: true
 
       - name: Install dependencies
         run: npm install
@@ -39,6 +42,8 @@ jobs:
 
       - name: Generate Android project
         run: npx cap add android
+      - name: Generate Android launcher icon
+        run: npx capacitor-assets generate --android
 
       - name: Sync Capacitor
         run: npx cap sync android
