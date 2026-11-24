@@ -136,7 +136,7 @@ async function saveWorkspace() {
 function queueCloudSave() {
   if (!currentTeacher || studentMode || !cloudReady || cloudConflict) return;
   clearTimeout(cloudSaveTimer);
-  cloudSaveTimer = setTimeout(() => saveWorkspace(), 500);
+  cloudSaveTimer = setTimeout(() => { cloudSaveTimer = null; saveWorkspace(); }, 500);
 }
 async function reloadWorkspaceFromCloud() {
   if (!currentTeacher || studentMode || cloudSaving || cloudSaveTimer) return;
