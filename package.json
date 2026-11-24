@@ -1,0 +1,43 @@
+{
+  "name": "class-quest",
+  "version": "1.0.0",
+  "description": "Class Quest desktop application",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "34.3.0",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "appId": "ru.classquest.desktop",
+    "productName": "Class Quest",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "index.html",
+      "assets/**/*",
+      "electron/**/*",
+      "!**/*.map"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
