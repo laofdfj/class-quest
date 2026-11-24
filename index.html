@@ -918,4 +918,4 @@ document.getElementById('cancel').onclick=()=>document.getElementById('modal').c
 document.getElementById('openprojector').onclick=()=>{let c=group(document.getElementById('leaderclass').value)||d.classes[0],arr=members(c&&c.id).sort((a,b)=>b.total-a.total);document.getElementById('projectorrows').innerHTML=arr.map((s,i)=>'<div class="row"><b>'+(i+1)+'.</b><div class="avatar">🐱</div><div class="rowinfo"><b>'+safe(s.name)+'</b><small>'+level(s.total)+'</small></div><span class="xp">'+s.total+' XP</span></div>').join('')||'<div class="row">Первые кото-легенды скоро появятся!</div>';document.getElementById('projector').classList.add('show')};
 document.getElementById('closeprojector').onclick=()=>document.getElementById('projector').classList.remove('show');
 render();showPage('home');loadMemePrefs();initMemeDB();if(d.settings.music)document.getElementById('music').checked=false;
-</script></body></html>
+</script><script src="assets/class-quest-auth.js"></script></body></html>
