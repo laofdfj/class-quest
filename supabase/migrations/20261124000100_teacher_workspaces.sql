@@ -36,3 +36,18 @@ create policy "Teachers delete their own workspace"
 
 comment on table public.teacher_workspaces is
   'Private JSON workspace for each Class Quest teacher. Student reads and purchases are mediated by the student-portal Edge Function.';
+
+grant select, update on public.teacher_workspaces to service_role;
+
+do $$
+begin
+  if not exists (
+    select 1 from pg_publication_tables
+    where pubname = 'supabase_realtime'
+      and schemaname = 'public'
+      and tablename = 'teacher_workspaces'
+  ) then
+    alter publication supabase_realtime add table public.teacher_workspaces;
+  end if;
+end
+$$;
